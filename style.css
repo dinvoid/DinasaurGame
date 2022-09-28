@@ -1,0 +1,228 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+}
+
+#container{
+	margin:auto 10px;
+	height:400px;
+	width: 1200px;
+	position: relative;
+	overflow: hidden;
+}
+
+h6{
+	color: red;
+}
+
+/*dinoooo*/
+#container #dino{
+	height:70px;
+	width: 70px;
+	position: absolute;
+	bottom: 28px;
+	left:20px;
+}
+
+#container #dino img{
+	height:70px;
+	width: 70px;
+}
+.dinoActive{
+	animation: animateDino 0.5s linear infinite;
+}
+@keyframes animateDino{
+  0%{
+  	bottom:28px;
+  }
+  45%,55%{
+    bottom:190px;
+  }
+	}
+
+/*blockkkkkkk*/
+#container #block{
+	height:70px;
+	width: 125px;
+	position: absolute;
+	bottom: 28px;
+	right:-60px;	
+}
+
+#container #block img{
+	height:70px;
+	width: 125px;
+}
+
+.blockActive{
+	animation: blockAnimate 2s linear infinite;
+}
+
+@keyframes blockAnimate{
+	0%{
+		right:-125px;
+	}
+	100%{
+		right:100%;
+	}
+}
+
+/*birdddd*/
+#container #bird{
+	height:50px;
+	width: 50px;
+	position: absolute;
+	top:200px;
+	right:0;	
+}
+
+#container #bird img{
+	height:50px;
+	width: 50px;
+}
+
+.birdActive{
+	animation: birdAnimate 6s linear infinite;	
+}
+
+@keyframes birdAnimate{
+  0%   {
+  	top: 200px;
+  	right:0px;}
+  25%  {
+  	top: 250px;}
+  50%  {
+  	top: 270px;}
+  75%  {
+  	top:200px;}
+  100% {
+  	top: 100px; 
+  	right:100%; }
+}
+
+/*roaadddd*/
+#container #road{
+	height:30px;
+	width: 1200px;
+	position: absolute;
+	bottom:0;
+	left:0;		
+}
+
+#container #road img{
+	height:30px;
+	width: 2000px;
+}
+
+.roadActive{
+	animation: roadAnimate 1s linear infinite;
+}
+
+@keyframes roadAnimate{
+	0%{
+		left:0;
+	}
+	100%{
+		left:-800px;
+	}
+}
+
+/*cloud*/
+#container #cloud{
+	height:80px;
+	width: 1200px;
+	position: absolute;
+	top:30px;
+	left:0;	
+	animation:none;
+}
+
+#container #cloud img{
+	height:80px;
+	width: 2000px;
+	position: absolute;
+	left:-2000px;
+   animation: none;
+}
+
+@keyframes animateCloud{
+    0%{
+		left:-2000px;
+	}
+	100%{
+		left:100%;
+	}
+
+}
+/*game over*/
+#container #game-over{
+	display:none;
+	height: 30px;
+	position: absolute;
+	bottom: 200px;
+	left: 400px;
+}
+
+#score{
+	height: auto;
+	width: auto;
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+
+#game-over{
+   height: 30px;
+}
+
+#container #restart{
+	height: 40px;
+    width:40px;
+   display: none;
+     position:absolute;
+     bottom:110px;
+    left:50%;
+
+}
+
+#container #restart img{
+	height: 40px;
+    width:40px;   
+}
+
+#container #restart img:hover{
+	cursor: pointer;
+	border:1px solid white;
+	border-radius: 50%;
+	background:transparent;
+	
+}
+
+#container #play{
+	height: 100px;
+    width:110px;
+    display: flex;
+     position:absolute;
+     bottom:50%;
+    left:50%;
+
+}
+
+#container #play img{
+	height: 100px;
+    width:110px;   
+}
+
+#container #play img:hover{
+	cursor: pointer;
+	border:1px solid white;
+	border-radius: 50%;
+	background:transparent;	
+}
